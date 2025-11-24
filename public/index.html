@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración Media Queries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">📱 Media Queries Demo</h1>
+            <nav class="nav">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Acerca</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Indicador de Dispositivo -->
+    <div class="device-indicator">
+        <div class="container">
+            <div class="indicator-box">
+                <span class="device-icon">💻</span>
+                <span class="device-text pc-text">Estás viendo en: PC (Desktop)</span>
+                <span class="device-text tablet-text">Estás viendo en: Tablet</span>
+                <span class="device-text mobile-text">Estás viendo en: Móvil</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-card">
+                        <h3>📊 Información</h3>
+                        <p>Este sidebar se adapta según el dispositivo</p>
+                        <ul class="info-list">
+                            <li>✅ PC: Lateral izquierdo</li>
+                            <li>✅ Tablet: Arriba del contenido</li>
+                            <li>✅ Móvil: Oculto por defecto</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Contenido -->
+                <section class="content">
+                    <h2 class="section-title">Demostración de Media Queries</h2>
+                    <p class="intro-text">
+                        Las media queries permiten adaptar el diseño según el tamaño de pantalla.
+                        Redimensiona tu navegador para ver los cambios.
+                    </p>
+
+                    <!-- Grid de Cards -->
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-icon">💻</div>
+                            <h3>PC / Desktop</h3>
+                            <p>Pantallas mayores a 1024px</p>
+                            <ul class="feature-list">
+                                <li>3 columnas de cards</li>
+                                <li>Sidebar lateral</li>
+                                <li>Navegación horizontal</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-icon">📱</div>
+                            <h3>Tablet</h3>
+                            <p>Pantallas entre 768px y 1024px</p>
+                            <ul class="feature-list">
+                                <li>2 columnas de cards</li>
+                                <li>Sidebar arriba</li>
+                                <li>Navegación compacta</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-icon">📲</div>
+                            <h3>Móvil</h3>
+                            <p>Pantallas menores a 768px</p>
+                            <ul class="feature-list">
+                                <li>1 columna de cards</li>
+                                <li>Sidebar oculto</li>
+                                <li>Navegación vertical</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-icon">🎨</div>
+                            <h3>Diseño Responsivo</h3>
+                            <p>Adaptable a cualquier pantalla</p>
+                            <ul class="feature-list">
+                                <li>Flexible y fluido</li>
+                                <li>Optimizado para cada dispositivo</li>
+                                <li>Mejor experiencia de usuario</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-icon">⚡</div>
+                            <h3>Rendimiento</h3>
+                            <p>Carga rápida y eficiente</p>
+                            <ul class="feature-list">
+                                <li>CSS optimizado</li>
+                                <li>Sin frameworks pesados</li>
+                                <li>Vanilla CSS puro</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-icon">✨</div>
+                            <h3>Moderno</h3>
+                            <p>Diseño actual y atractivo</p>
+                            <ul class="feature-list">
+                                <li>Gradientes suaves</li>
+                                <li>Animaciones fluidas</li>
+                                <li>Colores vibrantes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Media Queries Demo - Diseño Responsivo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
